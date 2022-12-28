@@ -117,7 +117,12 @@ gsap.from(".joinNowButton", {
     opacity: 0,
     duration: 1.5
 });
-
+gsap.from(".bestDealsTitle", {
+    scrollTrigger: ".bestDealsTitle", // start the animation when ".box" enters the viewport (once)
+    ease:Power1.easeInOut,
+    opacity: 0,
+    duration: 1.5
+});
 
 gsap.registerPlugin(ScrollSmoother);
 ScrollSmoother.create({

@@ -321,7 +321,7 @@ body{
                     display: flex;
                     flex-direction: row;
                     gap: 24px;
-                    justify-content: center;
+                    //justify-content: center;
                     margin-top: 80px;
                     overflow: auto;
                     .socialMediaImage{
@@ -588,6 +588,7 @@ body{
     }
 }
 
+
 @media only screen and (max-width: 1400px) {
     .container{ 
         .bestDealsSection{ 
@@ -703,6 +704,75 @@ body{
     }
 }
 
+@media only screen and (max-width: 972px) {
+    .container{ 
+        .startupGrowthSection{ 
+            .startupGrowth{ 
+                .container{ 
+                    .someClientsWrapper{ 
+                        .someClientsLogoWrapper{
+                            display: grid;
+                            column-gap: 0;
+                            justify-content: center;
+                            grid-template-columns: repeat(2, auto);
+                            justify-content: space-between;
+                            .someClientsLogoImage{
+                                width: 164px;
+                                height: 51px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 865px) {
+    .heroMessageWrapper{ 
+        .heroDescription{
+            width: 80%;
+        }
+    }
+    .onlyOneTabWrapper{
+         .justOneTabWrapper, .discoverATrendSolutionWrapper{
+            display: none;
+         }
+    }
+    .container{ 
+        .wrapper{ 
+            .contained{ 
+                .heroSection{
+                    .hero{
+                        .container {
+                            .heroMessageWrapper{ 
+                                .heroDescription{
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .subscriptionToggle{
+        display: none;
+    }
+    .container{ 
+        .bestDealsSection{ 
+            .bestDeals{ 
+                .container{ 
+                    .subscriptionCardWrapper{
+                        .cardOne, .cardTwo, .cardThree{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .container{ 
         .newTabsSection{ 
@@ -743,6 +813,30 @@ body{
                     .footerMenuList{
                         flex-direction: column;
                         gap: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 686px) {
+    .container{ 
+        .startupGrowthSection{ 
+            .startupGrowth{ 
+                .container{ 
+                    .someClientsWrapper{ 
+                        .someClientsLogoWrapper{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            row-gap: 50px;
+                            align-items: center;
+                            .someClientsLogoImage{
+                                width: 164px;
+                                height: 51px;
+                            }
+                        }
                     }
                 }
             }
